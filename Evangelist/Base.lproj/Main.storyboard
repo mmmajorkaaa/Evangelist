@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0f0-0t-FsU">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Клуб-->
+        <scene sceneID="zY6-1S-kT1">
+            <objects>
+                <viewController storyboardIdentifier="Fish" id="RYt-dy-ioc" customClass="Fish" customModule="Evangelist" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gcF-MU-LAG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aio-vr-9vi">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cDq-pp-Nwj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="Aio-vr-9vi" secondAttribute="bottom" constant="-63" id="SXg-IR-PR5"/>
+                            <constraint firstItem="Aio-vr-9vi" firstAttribute="top" secondItem="cDq-pp-Nwj" secondAttribute="top" id="Tie-5m-iTq"/>
+                            <constraint firstItem="Aio-vr-9vi" firstAttribute="bottom" secondItem="cDq-pp-Nwj" secondAttribute="bottom" id="Tiq-b4-MPZ"/>
+                            <constraint firstItem="Aio-vr-9vi" firstAttribute="leading" secondItem="cDq-pp-Nwj" secondAttribute="leading" id="XMu-gY-Twa"/>
+                            <constraint firstItem="Aio-vr-9vi" firstAttribute="bottom" secondItem="cDq-pp-Nwj" secondAttribute="bottom" id="Xob-F5-TIN"/>
+                            <constraint firstAttribute="trailing" secondItem="Aio-vr-9vi" secondAttribute="trailing" id="gp3-VY-Puf"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Клуб" image="suit.heart.fill" catalog="system" id="vzC-f7-QkY"/>
+                    <connections>
+                        <outlet property="wb_Fish" destination="Aio-vr-9vi" id="1ze-KH-1I7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TIP-Sc-Kgx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-186.95652173913044" y="956.91964285714278"/>
+        </scene>
+        <!--Евангелист-->
+        <scene sceneID="CZa-rc-PqA">
+            <objects>
+                <viewController storyboardIdentifier="Evangelist" id="EA1-xn-ZRw" customClass="Evangelist" customModule="Evangelist" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ckj-gc-74w">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WuF-F1-KY4">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wz2-Mk-oeQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WuF-F1-KY4" firstAttribute="leading" secondItem="wz2-Mk-oeQ" secondAttribute="leading" id="UE4-pJ-cya"/>
+                            <constraint firstItem="WuF-F1-KY4" firstAttribute="top" secondItem="wz2-Mk-oeQ" secondAttribute="top" id="ZKO-gu-8RY"/>
+                            <constraint firstItem="WuF-F1-KY4" firstAttribute="bottom" secondItem="wz2-Mk-oeQ" secondAttribute="bottom" id="ehk-90-7Xj"/>
+                            <constraint firstItem="WuF-F1-KY4" firstAttribute="trailing" secondItem="wz2-Mk-oeQ" secondAttribute="trailing" id="fzc-Il-bbA"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Евангелист" image="house.fill" catalog="system" id="1R9-Vs-div"/>
+                    <connections>
+                        <outlet property="wb_Evangelist" destination="WuF-F1-KY4" id="UGj-5Y-sp5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Enj-P2-dve" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1368.1159420289855" y="956.91964285714278"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yt3-Kf-F23">
+            <objects>
+                <tabBarController id="0f0-0t-FsU" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="f38-Rm-RvZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="EA1-xn-ZRw" kind="relationship" relationship="viewControllers" id="Q9B-2o-NpL"/>
+                        <segue destination="RYt-dy-ioc" kind="relationship" relationship="viewControllers" id="ssb-FZ-VKE"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="vHy-ht-rqQ"/>
+                        <segue destination="XGQ-Pj-2jl" kind="relationship" relationship="viewControllers" id="Lgj-qj-okl"/>
+                        <segue destination="loE-S2-XM8" kind="relationship" relationship="viewControllers" id="WXx-ap-KGa"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pmz-EJ-2OP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-913" y="224"/>
+        </scene>
+        <!--Молодежь-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="Young" id="BYZ-38-t0r" customClass="Young" customModule="Evangelist" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tgy-Bv-tHK">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Tgy-Bv-tHK" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="9ZT-RN-cxv"/>
+                            <constraint firstItem="Tgy-Bv-tHK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="PhM-r0-Plh"/>
+                            <constraint firstItem="Tgy-Bv-tHK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ohA-Pp-0e6"/>
+                            <constraint firstAttribute="trailing" secondItem="Tgy-Bv-tHK" secondAttribute="trailing" id="z55-OK-5VN"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Молодежь" image="flame.fill" catalog="system" id="CQB-R6-Y9E"/>
+                    <connections>
+                        <outlet property="wb_Young" destination="Tgy-Bv-tHK" id="Tv9-2v-i7a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="805.79710144927537" y="956.91964285714278"/>
+        </scene>
+        <!--Блог-->
+        <scene sceneID="bEU-1Q-86N">
+            <objects>
+                <viewController storyboardIdentifier="Blog" id="XGQ-Pj-2jl" customClass="Blog" customModule="Evangelist" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mbk-Tw-xzE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0jq-r4-om0">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Zhk-0J-N6e"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0jq-r4-om0" firstAttribute="bottom" secondItem="Zhk-0J-N6e" secondAttribute="bottom" id="0fv-gN-E56"/>
+                            <constraint firstItem="0jq-r4-om0" firstAttribute="top" secondItem="Zhk-0J-N6e" secondAttribute="top" id="ICx-Li-Ghd"/>
+                            <constraint firstItem="0jq-r4-om0" firstAttribute="leading" secondItem="Zhk-0J-N6e" secondAttribute="leading" id="rig-7b-UR3"/>
+                            <constraint firstAttribute="trailing" secondItem="0jq-r4-om0" secondAttribute="trailing" id="yeR-eK-RGg"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Блог" image="megaphone.fill" catalog="system" id="Ab6-F6-FhF"/>
+                    <connections>
+                        <outlet property="wb_Blog" destination="0jq-r4-om0" id="2rV-jr-aCK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jUX-4F-FN5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1820.289855072464" y="951.5625"/>
+        </scene>
+        <!--Опросы-->
+        <scene sceneID="jei-v9-Qhf">
+            <objects>
+                <viewController storyboardIdentifier="Ask" id="loE-S2-XM8" customClass="Ask" customModule="Evangelist" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jMo-7K-tBs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mSk-hB-ImP">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Yyt-pH-rUt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Yyt-pH-rUt" firstAttribute="bottom" secondItem="mSk-hB-ImP" secondAttribute="bottom" id="DwB-cO-NK2"/>
+                            <constraint firstItem="Yyt-pH-rUt" firstAttribute="trailing" secondItem="mSk-hB-ImP" secondAttribute="trailing" id="LAk-bg-jiE"/>
+                            <constraint firstItem="mSk-hB-ImP" firstAttribute="leading" secondItem="Yyt-pH-rUt" secondAttribute="leading" id="ewy-2L-rhF"/>
+                            <constraint firstItem="mSk-hB-ImP" firstAttribute="top" secondItem="Yyt-pH-rUt" secondAttribute="top" id="gsD-c1-UbO"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Опросы" image="person.crop.circle.badge.questionmark.ar" catalog="system" id="Wnn-UC-HoL"/>
+                    <connections>
+                        <outlet property="wb_Ask" destination="mSk-hB-ImP" id="7ZT-El-FLd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bbo-k1-WEy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2943" y="957"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="flame.fill" catalog="system" width="108" height="128"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="megaphone.fill" catalog="system" width="128" height="114"/>
+        <image name="person.crop.circle.badge.questionmark.ar" catalog="system" width="128" height="113"/>
+        <image name="suit.heart.fill" catalog="system" width="128" height="109"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
